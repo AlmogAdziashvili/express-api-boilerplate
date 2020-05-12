@@ -1,0 +1,43 @@
+{
+  "name": "express-api-boilerplate",
+  "version": "1.0.0",
+  "description": "REST API Boilerplate",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node ./src/bin/www",
+    "dev": "nodemon ./bin/www",
+    "test": "set NODE_ENV=test&& mocha ./tests/ --timeout 15000 --exit",
+    "testN": "set NODE_ENV=test&& mocha ./tests/ --reporter nyan --timeout 15000 --exit",
+    "coverage": "set NODE_ENV=production&& nyc mocha ./tests/ --timeout 15000 --exit"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "http-status-codes": "1.4.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "mocha": "7.1.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "supertest": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlmogAdziashvili/express-api-boilerplate"
+  },
+  "author": "Almog Adziashvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlmogAdziashvili/express-api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/AlmogAdziashvili/express-api-boilerplate#readme"
+}
